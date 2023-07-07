@@ -1,0 +1,682 @@
+::-webkit-scrollbar {
+    /* width: 5px; */
+    background-color: gray;
+ }
+ ::-webkit-scrollbar-thumb
+ {
+    background-color: white;
+    border-radius: 1vw;
+ }
+*
+{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face 
+{
+    font-family: infinity;
+    src: url(Assets/MADEINFINITY\ PERSONALUSE-Regular.otf);
+}
+@font-face {
+    font-family: infinity-thin;
+    src: url(Assets/MADEINFINITY\ PERSONALUSE-Thin.otf);
+}
+@font-face {
+    font-family: noodle;
+    src: url(Assets/big_noodle_titling.ttf);
+}
+html
+{
+    scroll-behavior: smooth;
+}
+nav
+{
+    position: fixed ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.logo img
+{
+    width: auto;
+    height: 6vw;
+    margin-left: 5vw;
+}
+
+.menu li
+{
+    list-style: none;
+}
+.menu
+{
+    display: flex;
+    margin-right: 5vw;
+}
+.menu a
+{
+    font-family: infinity;
+    font-weight: 400;
+    font-size: 1.75vw;
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: black;
+    width: auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    
+}
+.hero-img img
+{
+    width: auto;
+    height: 35vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+}
+.hero
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6vw;
+    height: 43vw;
+}
+.hero-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.hero-text-1
+{
+    color: white;
+    margin-left: 5vw;
+    font-size: 6vw;
+    font-family: infinity;
+    margin-top: 5vw;
+    margin-bottom: 0;
+}
+.hero-text-2
+{
+    color: white;
+    margin-left: 5vw;
+    font-size: 2.5vw;
+    font-family: infinity-thin;
+    margin-top: 1vw;
+    margin-bottom: 0;
+}
+.hero-text-3
+{
+    color: white;
+    margin-left: 5vw;
+    font-size: 3vw;
+    font-family: infinity;
+    font-weight: 200;
+    margin-top: 3vw;
+    margin-bottom: 0;
+}
+.hero-button
+{
+    text-decoration: none;
+    color: black;
+    font-family: infinity;
+    font-size: 1.5vw;
+    /* display: block; */
+    background-color: white;
+    margin-left: 18vw;
+    margin-top: 4.5vw;
+    padding-top: 0.75vw;
+    padding-bottom: 0.75vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.b-sellers
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7vw;
+}
+.b-title
+{
+    font-size: 3vw;
+    color: white;
+    font-family: infinity;
+    text-align: center;
+    vertical-align: middle;
+    /* text-decoration: underline; */
+    border: solid white 0.5vw;
+    width: auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 0.5vw;
+}
+.b-tagline
+{
+    font-size: 2vw;
+    color: white;
+    font-family: infinity;
+    text-align: center;
+    margin-top: 1vw;
+}
+.card
+{
+    background: linear-gradient(to right,rgb(80,80,80),rgb(50,50,50));
+    height: 23vw;
+    display: flex;
+    transition: 0.1s;
+    
+}
+.card:not(:first-child)
+{
+    margin-left: -2.5vw;
+}
+.card:not(:last-child)
+{
+    border-radius: 3vw;
+    width: 22.1vw;
+}
+.card:last-child
+{
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    width: 20vw;
+}
+.title
+{
+    background: transparent;
+    text-align: center;
+    font-family: infinity;
+    color: white;
+    font-size: 1.75vw;
+    margin-bottom: 1.25vw;
+}
+.author
+{
+    background: transparent;
+    font-family: infinity;
+    color: white;
+    text-align: center;
+    font-size: 1.35vw;
+    font-weight: 400;
+}
+.info
+{
+    background: transparent;
+    font-family: infinity-thin;
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+.cards
+{
+    display: flex;
+    overflow-x: hidden;
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+}
+.c-image
+{
+    width: auto;
+    height: 9vw;
+    margin-bottom: 1.25vw;
+    background-color: transparent;
+}
+.card-indicators img
+{
+    width: 1.45vw;
+    height: auto;
+    background-color: transparent;
+}
+.card-indicators
+{
+    background-color: transparent;
+    width: 1.45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-main
+{
+    background-color: transparent;
+    width: 17.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    height: 19vw;
+    padding-top: 1vw;
+}
+.img-text
+{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.only-text
+{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-buttons
+{
+    visibility: hidden;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-evenly;
+    width: 32vw;
+}
+.know-more
+{
+    display: block;
+    text-decoration: none;
+    background-color: #87ceeb;
+    color: black;
+    font-family: infinity;
+    padding: 0.5vw;
+    width: 8vw;
+    text-align: center;
+    border-radius: 1.25vw;
+    font-size: 1.25vw;
+}
+.buy-now
+{
+    display: block;
+    text-decoration: none;
+    background-color: gold;
+    color: black;
+    font-family: infinity;
+    padding: 0.5vw;
+    width: 8vw;
+    text-align: center;
+    border-radius: 1.25vw;
+    font-size: 1.25vw;
+}
+.add-button
+{
+    background-color: green;
+    color: white;
+    border-top-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    border: solid green 2px;
+    display: block;
+    width: 5vw;
+    font-size: 1.25vw;
+    text-align: center;
+    font-family: infinity;
+    text-decoration: none;
+    /* position: absolute; */
+}
+.offer-button
+{
+    background-color: gold;
+    border: solid gold 2px;
+    color: black;
+    border-top-right-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    width: 7.5vw;
+    font-family: infinity;
+    text-align: center;
+    display: block;
+    font-size: 1.25vw;
+    text-decoration: none;
+}
+.card:hover 
+{
+    width: 35vw;
+    height: 26vw;
+    transform: translateY(-1.5vw);
+}
+.card:first-child:hover
+{
+    transform: translate(6.45vw, -1.5vw) ;
+}
+.card:last-child:hover
+{
+    transform: translate(-8vw, -1.5vw);
+    border-radius: 3vw;
+}
+.card:hover .card-buttons
+{
+    visibility: visible;
+    margin-top: 1vw;
+}
+.card:hover .card-main
+{
+    width: 32vw;
+}
+.card:hover .img-text
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2vw;
+}
+.card:hover .only-text
+{
+    width: 16vw;
+    display: flex;
+    justify-content: space-between;
+}
+.card:hover .title
+{
+    padding: 0;
+    margin: 0%;
+    font-size: 2.5vw;
+    margin-top: 1vw;
+}
+.card:hover .c-image
+{
+    padding: 0;
+    margin: 0%;
+    height: 11vw;
+    padding-right: 1.5vw;
+}
+.card:hover .info
+{
+    padding: 0;
+    margin: 0%;
+    font-size: 1.15vw;
+    font-weight: 100;
+    margin-bottom: 2vw;
+}
+.card:hover .card-text
+{
+    padding: 0;
+    margin: 0%;
+}
+.card:hover .author
+{
+    font-size: 1.7vw;
+}
+.rev-main
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 98vw;
+    margin-top: 3vw;
+}
+.prev-rev
+{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* margin-bottom: 400px;
+    margin-top: 200px; */
+    height: 58vw;
+    direction: rtl;
+    margin-bottom: 1vw;
+}
+.prev-rev::-webkit-scrollbar {
+    width: 1vw;
+    background-color: #000;
+    
+    /* position: absolute;
+    left: 0px; */
+ }
+ .prev-rev::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 1vw;
+    width: 1vw;
+ }
+.prev-rev-title
+{
+    border: solid 0.25vw white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.prev-rev-title h1
+{
+    color: white;
+    font-family: infinity;
+    text-align: center;
+    font-size: 2.5vw;
+    padding: 1vw;
+    margin-bottom: 1vw;
+}
+.rev-card
+{
+    background: linear-gradient(rgb(80,80,80),rgb(50,50,50));
+    width: 40vw;
+    height: 9.5vw;
+    border-radius: 3vw;
+    position: sticky;
+    top: 0;
+    padding-bottom: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1;
+    margin-left: 0.5vw;
+}
+.rev-info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+.rev-img
+{
+    width: auto;
+    height: 8.5vw;
+    background-color: transparent;
+    border-radius: 5vw;
+    margin-top: 2.5vw;
+}
+.rev-name-date
+{
+    background-color: transparent;
+}
+.rev-name
+{
+    background-color: transparent;
+    color: white;
+    font-family: infinity;
+    font-size: 2.5vw;
+    margin-top: 0.5vw;
+    text-align: center;
+}
+.rev-date
+{
+    background-color: transparent;
+    color: white;
+    font-family: infinity;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 1vw;
+}
+.rev-text
+{
+    background-color: transparent;
+    color: white;
+    font-family: infinity;
+    width: 20vw;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 200;
+    margin-top: 2.5vw;
+}
+.rev-title
+{
+    color: white;
+    font-family: infinity;
+    text-align: center;
+    font-size: 2.5vw;
+    padding: 1vw;
+}
+.r-i-name
+{
+    color: white;
+}
+.label
+{
+    color: white;
+    width: 10vw;
+    font-family: infinity;
+    font-size: 1.75vw;
+}
+.rev-form
+{
+    width: 42vw;
+    border: solid 0.25vw white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input
+{
+    width: 25vw;
+    font-family: infinity;
+    font-size: 1.5vw;
+    border: solid 0.2vw white;
+    padding-left: 1vw ;
+    height: 2.5vw;
+    color: white;
+    padding-bottom: 0.2vw;
+}
+.row
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3vw;
+    margin-bottom: 4vw;
+}
+.input:focus
+{
+    background-color: white;
+    color: black;
+}
+.write-rev
+{
+    height: 20vw;
+}
+.rev-button
+{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-family: infinity;
+    font-size: 2vw;
+    width: 8vw;
+    height: 3vw;
+    text-align: center;
+    margin-top: 2.5vw;
+}
+footer
+{
+    background-color: white;
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h1
+{
+    font-size: 3vw;
+    color: black;
+    background-color: transparent;
+    font-family: infinity;
+    text-align: center;
+    vertical-align: middle;
+    /* text-decoration: underline; */
+    border: solid black 0.5vw;
+    width: auto;
+    display: inline-block;
+    margin-top: 3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 0.5vw;
+}
+.phone
+{
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 2vw;
+    padding-right: 5vw;
+    padding-left: 11vw;
+}
+.mail
+{
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 2vw;
+}
+.whatsapp
+{
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 2vw;
+    padding-right: 8vw;
+    padding-left: 8vw;
+}
+.insta, .fb, .linkedin
+{
+    color: black;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 5vw;
+    justify-content: space-between;
+    font-size: 2vw;
+    text-decoration: none;
+}
+.contact1
+{
+    background-color: transparent;
+    display: flex;
+    padding: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    justify-content: space-evenly;
+    width: 94vw;
+}
+.contact2
+{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    width: 94vw;
+    margin-bottom: 2vw;
+    margin-bottom: 4vw;
+}
+.contact1 div,.contact2 div
+{
+    background-color: transparent;
+}
+.linkedin a,.fb a,.insta
+{
+    text-decoration: none;
+    background-color: white;
+}
+.cr
+{
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 1vw;
+}
+.bi
+{
+    color: black;
+    background-color: white;
+}
